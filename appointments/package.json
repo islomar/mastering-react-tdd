@@ -11,5 +11,8 @@
     "url": "example.com"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
 }

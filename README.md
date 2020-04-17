@@ -11,3 +11,5 @@
 * No class components in the book.
 * Functional components using hooks are simler than class components.
 
+## Chapter 1
+* Install Jest: `npm install --save-dev jest`
