@@ -21,3 +21,4 @@
 * Tests:
     * Give your describe blocks the same name as the component itself.
     * Jest magically includes a DOM implementation for us. It uses `jsdom`, a headless implementation of the DOM. We can do test browser interactions on the command line. `jsdom` is a [Jest environment](https://jestjs.io/docs/en/configuration#testenvironment-string).
+* They tend to avoid using default exports; doing so keeps the name of the components and their usage in sync: if they hange the name of a component, then every place where it's imported will break unless they change those too. But with default exports, it can be hard to track where components are used.    
