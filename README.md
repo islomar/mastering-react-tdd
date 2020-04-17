@@ -12,4 +12,8 @@
 * Functional components using hooks are simler than class components.
 
 ## Chapter 1
+* `npm init`
 * Install Jest: `npm install --save-dev jest`
+* Install React: `npm install --save react react-dom`
+* Babel: JS transpilation between versions.
+* JSX: JavaScript XML
