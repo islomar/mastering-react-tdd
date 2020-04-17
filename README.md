@@ -14,6 +14,9 @@
 ## Chapter 1
 * `npm init`
 * Install Jest: `npm install --save-dev jest`
+    * I needed to install it globally as well: `npm install -g jest`
 * Install React: `npm install --save react react-dom`
 * Babel: JS transpilation between versions.
 * JSX: JavaScript XML
+* Tests:
+    * Give your describe blocks the same name as the component itself.
