@@ -9,7 +9,7 @@
 
 ## Introduction
 * No class components in the book.
-* Functional components using hooks are simler than class components.
+* Functional components using hooks are simpler than class components.
 
 ## Chapter 1
 * `npm init`
