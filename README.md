@@ -20,3 +20,4 @@
 * JSX: JavaScript XML
 * Tests:
     * Give your describe blocks the same name as the component itself.
+    * Jest magically includes a DOM implementation for us. It uses `jsdom`, a headless implementation of the DOM. We can do test browser interactions on the command line. `jsdom` is a [Jest environment](https://jestjs.io/docs/en/configuration#testenvironment-string).
