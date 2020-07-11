@@ -4,7 +4,8 @@
   "description": "Appointments system",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test-once": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test"
+      "pre-commit": "npm run test-once",
+      "pre-push": "npm run test-once"
     }
-  }  
+  }
 }
