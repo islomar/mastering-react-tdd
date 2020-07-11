@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Appointment } from "../src/Appointment";
 
-let customer;
-let container;
-
-const render = (component) => ReactDOM.render(component, container);
-
 describe("Appointment", () => {
+  let customer;
+  let container;
+
+  const render = (component) => ReactDOM.render(component, container);
+
   beforeEach(() => {
     container = document.createElement("div");
   });
