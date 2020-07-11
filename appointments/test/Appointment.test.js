@@ -1,27 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Appointment } from '../src/Appointment';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Appointment } from "../src/Appointment";
 
-describe('Appointment', () => {
-    it('renders the customer first name', () => {
-        const customer = { firstName: 'Ashley' };
-        const component = <Appointment customer={customer} />;
-        const container = document.createElement('div');
+let customer;
+let container;
 
-        ReactDOM.render(component, container);
+describe("Appointment", () => {
+  beforeEach(() => {
+    container = document.createElement("div");
+  });
 
-        expect(container.textContent).toMatch('Ashley');
-    });
+  it("renders the customer first name", () => {
+    customer = { firstName: "Ashley" };
+    const component = <Appointment customer={customer} />;
+
+    ReactDOM.render(component, container);
+
+    expect(container.textContent).toMatch("Ashley");
+  });
 });
 
-describe('Appointment', () => {
-    it('renders another customer first name', () => {
-        const customer = { firstName: 'Jordan' };
-        const component = <Appointment customer={customer} />;
-        const container = document.createElement('div');
+describe("Appointment", () => {
+  it("renders another customer first name", () => {
+    customer = { firstName: "Jordan" };
+    const component = <Appointment customer={customer} />;
 
-        ReactDOM.render(component, container);
+    ReactDOM.render(component, container);
 
-        expect(container.textContent).toMatch('Jordan');
-    });
+    expect(container.textContent).toMatch("Jordan");
+  });
 });
