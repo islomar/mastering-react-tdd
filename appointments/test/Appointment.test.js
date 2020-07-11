@@ -19,9 +19,7 @@ describe("Appointment", () => {
 
     expect(container.textContent).toMatch("Ashley");
   });
-});
 
-describe("Appointment", () => {
   it("renders another customer first name", () => {
     customer = { firstName: "Jordan" };
 
