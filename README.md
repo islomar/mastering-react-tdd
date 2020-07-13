@@ -26,3 +26,4 @@
 - They tend to **avoid using default exports**; doing so keeps the name of the components and their usage in sync: if they change the name of a component, then every place where it's imported will break unless they change those too. But with default exports, it can be hard to track where components are used.
 - Tests: verify using the `container` object, not `document`.
 - Watch out! Variables defined within the describe scope are NOT cleared between each test execution.
+- **Hooks** are a feature of REact that manage various non-rendering related operations.
