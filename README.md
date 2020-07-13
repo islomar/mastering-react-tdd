@@ -27,3 +27,9 @@
 - Tests: verify using the `container` object, not `document`.
 - Watch out! Variables defined within the describe scope are NOT cleared between each test execution.
 - **Hooks** are a feature of REact that manage various non-rendering related operations.
+- React applications are composed of a hierarchy of components that are rendered at the root.
+- Adding an entrypoint:
+  - Install Webpack: `npm install --save-dev webpack webpack-cli babel-loader`
+  - Add `"build": "webpack"` in the package.json
+  - touch dist/index.html
+  - npm run build
